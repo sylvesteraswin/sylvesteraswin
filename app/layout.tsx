@@ -17,15 +17,9 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html
-      lang="en"
-      className={cn(
-        "bg-white font-sans text-slate-900 antialiased dark:bg-slate-900 dark:text-slate-50",
-        fontSans.variable
-      )}
-    >
+    <html lang="en" className={cn(fontSans.variable)}>
       <head />
-      <body className="min-h-screen">
+      <body className="min-h-screen bg-white font-sans text-slate-900 antialiased dark:bg-slate-900 dark:text-slate-50">
         {children}
         <Analytics />
         <TailwindIndicator />
