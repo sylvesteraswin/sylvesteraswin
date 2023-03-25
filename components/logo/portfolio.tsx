@@ -1,12 +1,10 @@
 import { cn } from "@/lib/utils"
+import { SVGProps } from "react"
 
-interface LogoProps extends React.HTMLAttributes<SVGElement> {
-  className?: string
-  width?: string
-  height?: string
-}
-
-export default function SylLogo({ className, ...rest }: LogoProps) {
+export default function SylLogo({
+  className,
+  ...rest
+}: SVGProps<SVGSVGElement>) {
   return (
     <svg
       data-name="Layer 2"

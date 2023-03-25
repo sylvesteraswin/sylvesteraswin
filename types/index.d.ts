@@ -49,6 +49,11 @@ export type PortfolioConfig = {
   mainNav: MainNavItem[]
 }
 
+export type AIConfig = {
+  mainNav: MainNavItem[]
+  sidebarNav: SidebarNavItem[]
+}
+
 export type DashboardConfig = {
   mainNav: MainNavItem[]
   sidebarNav: SidebarNavItem[]

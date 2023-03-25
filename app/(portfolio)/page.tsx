@@ -6,7 +6,7 @@ import { siteConfig } from "@/config/site"
 export default async function IndexPage() {
   return (
     <>
-      <section className="container grid h-[calc(100vh-64px)] items-center justify-center gap-6 pt-6 pb-8 md:pt-10 md:pb-12 lg:pt-16 lg:pb-24">
+      <section className="w container grid h-[calc(100vh-10rem)] items-center justify-center gap-6 pt-6 pb-8 md:pt-10 md:pb-12 lg:pt-16 lg:pb-24">
         <div className="mx-auto flex flex-col items-start justify-start gap-4 lg:w-[52rem]">
           <Image
             src="http://sasw.in/profile-photo"

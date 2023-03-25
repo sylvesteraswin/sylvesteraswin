@@ -4,7 +4,7 @@ import Link from "next/link"
 import { buttonVariants } from "@/components/ui/button"
 import { siteConfig } from "@/config/site"
 import MainNav from "@/components/main-nav"
-import SiteFooter from "@/components/site-footer"
+import { SiteFooter } from "@/components/site-footer"
 import { Icons } from "@/components/icons"
 import { portfolioConfig } from "@/config/portfolio"
 

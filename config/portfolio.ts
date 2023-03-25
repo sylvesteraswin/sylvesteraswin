@@ -1,4 +1,5 @@
 import { PortfolioConfig } from "types"
+import { aiConfig } from "@/config/ai"
 
 export const portfolioConfig: PortfolioConfig = {
   mainNav: [
@@ -7,9 +8,9 @@ export const portfolioConfig: PortfolioConfig = {
       href: "/features",
       disabled: true,
     }, */
-    /* {
-      title: "Resume",
-      href: "https://sasw.in/resume",
-    }, */
+    {
+      title: "GPT",
+      href: aiConfig.sidebarNav.at(0)?.items?.at(0).href,
+    },
   ],
 }
