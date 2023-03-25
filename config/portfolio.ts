@@ -7,9 +7,9 @@ export const portfolioConfig: PortfolioConfig = {
       href: "/features",
       disabled: true,
     }, */
-    {
+    /* {
       title: "Resume",
       href: "https://sasw.in/resume",
-    },
+    }, */
   ],
 }
