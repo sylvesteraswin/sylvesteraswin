@@ -12,5 +12,14 @@ export const aiConfig: AIConfig = {
         },
       ],
     },
+    {
+      title: "Chatbot",
+      items: [
+        {
+          title: "Wikipedia",
+          href: "/gpt/wikipedia",
+        },
+      ],
+    },
   ],
 }

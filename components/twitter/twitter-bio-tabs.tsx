@@ -1,7 +1,7 @@
 import { capitalize } from "lodash"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import * as React from "react"
-import { TwitterProfileSkeleton } from "@/components/twitter-profile-skeleton"
+import { TwitterProfileSkeleton } from "@/components/twitter/twitter-profile-skeleton"
 
 interface TwitterBioTabsProps {
   generatedBios: string

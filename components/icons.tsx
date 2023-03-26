@@ -22,6 +22,7 @@ import {
   User,
   X,
   Newspaper,
+  Search,
   type Icon as LucideIcon,
 } from "lucide-react"
 
@@ -29,6 +30,7 @@ export type Icon = LucideIcon
 
 export const Icons = {
   logo: Command,
+  search: Search,
   close: X,
   spinner: Loader2,
   chevronLeft: ChevronLeft,

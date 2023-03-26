@@ -15,7 +15,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { buildPrompt } from "@/lib/tw-prompt"
-import { TwitterBioTabs } from "@/components/twitter-bio-tabs"
+import { TwitterBioTabs } from "@/components/twitter/twitter-bio-tabs"
 
 const styleList = ["informational", "professional", "casual", "funny"]
 
