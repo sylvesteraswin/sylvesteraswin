@@ -24,6 +24,13 @@ export function TwitterForm() {
   const [textStyle, setTextStyle] = React.useState<string>(styleList[0])
   const [currentBio, setCurrentBio] = React.useState<string>("")
   const [generatedBio, setGeneratedBio] = React.useState<string>("")
+  const tabRef = React.useRef<HTMLDivElement>(null)
+
+  const scrollToTab = () => {
+    if (tabRef.current !== null) {
+      tabRef.current.scrollIntoView({ behavior: "smooth" })
+    }
+  }
 
   const handleTextareaChange: React.ChangeEventHandler<HTMLTextAreaElement> = (
     e
@@ -72,6 +79,8 @@ export function TwitterForm() {
       setGeneratedBio((prev) => prev + chunkValue)
     }
     setLoading(false)
+
+    scrollToTab()
   }, [textStyle, currentBio])
 
   return (
@@ -118,7 +127,9 @@ export function TwitterForm() {
         </Button>
       </div>
       <hr className="border-slate-200" />
-      {generatedBio && <TwitterBioTabs generatedBios={generatedBio} />}
+      {generatedBio && (
+        <TwitterBioTabs ref={tabRef} generatedBios={generatedBio} />
+      )}
     </>
   )
 }
